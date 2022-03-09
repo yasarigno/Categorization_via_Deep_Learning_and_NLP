@@ -1,10 +1,10 @@
 ---
 ### PROJET-6
-### Classification of customer profiles of OLIST, an e-commerce site
+### Recognition of categories of products from images and textual descriptions.
 ---
 
 <p align="center">
-<img align="center" src="support\olist.png" style="width: 300px" />
+<img align="center" src="support\logo.png" style="width: 300px" />
 </p>
 
 We provide OLIST's e-commerce teams a customer segmentation that they can use on a daily basis for their communication campaigns. The aim is to provide the marketing team an actionable description of customer segmentation and its underlying logic for optimal use. In this project we analyse types of customers through their behavior and personal data. We therefore use unsupervised methods to group customers with similar profiles. The customers has been classified into 8 profiles. 

@@ -33,7 +33,7 @@ https://s3-eu-west-1.amazonaws.com/static.oc-static.com/prod/courses/files/Parco
 
 ---
 
-There are 5 notebooks in this project. 
+There are 6 notebooks in this project. 
 
 **Notebook 1 :** Text mining, Unsupervised models such as TF-IDF, Word embedding via GloVe, Neural networks, Natural Language Processing. We do not use the set of pictures in this Notebook. The steps of transformations on corpus look like this:
 

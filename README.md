@@ -7,14 +7,11 @@
 <img align="center" src="support\logo.png" style="width: 300px" />
 </p>
 
-We provide OLIST's e-commerce teams a customer segmentation that they can use on a daily basis for their communication campaigns. The aim is to provide the marketing team an actionable description of customer segmentation and its underlying logic for optimal use. In this project we analyse types of customers through their behavior and personal data. We therefore use unsupervised methods to group customers with similar profiles. The customers has been classified into 8 profiles. 
-We also provide OLIST a maintenance contract proposal based on an analysis of the stability of the classification over time.
+We are given a dataset which consists of pictures of goods and their descriptions. The csv file contains some other information such as the price of the product, the name of the product and its brand. There is as well a variable "product_category_tree" which defines categories and 6 subcategories of the product. This variable is defined manually by the sellers. As the size of our dataset grows up drastically, the task of associating the product to the category will be a burden. Therefore we must automatize this task by using only the pictures and the descriptions. Now the problem that we want to solve is converted into a problem of Natural Language Processing (NLP) and that of Computer Vision (CV). 
 
-The figure below shows one of these 8 profiles. In a nutshell, we see that customers Cluster 1 give low review scores. One of the reasons for their dissatisfaction seems to be the delivery delay. We can also say that these users live in cities farther from the seller they shop at. For this customer profile, delivery delay is a sign of unhappiness.
+We approach to this problem of recognition of categories from different aspects. First we use only the descriptions and perform algorithms of NLP, then in later notebooks we take the tools of CV into account.
 
-<p align="center">
-<img align="center" src="support\profile.png" style="width: 600px" />
-</p>
+Let us see what we have as input and how it looks like. For instance, the first product is a purple curtain. its description
 
 ---
 Data source:

@@ -11,37 +11,58 @@ We are given a dataset which consists of pictures of goods and their description
 
 We approach to this problem of recognition of categories from different aspects. First we use only the descriptions and perform algorithms of NLP, then in later notebooks we take the tools of CV into account.
 
-Let us see what we have as input and how it looks like. For instance, the first product is a purple curtain. its description
+Let us see what we have as input and how it looks like. For instance, the first product is a purple curtain. 
+
+<p align="center">
+<img align="center" src="support\first_photo.png" style="width: 300px" />
+</p>
+
+And its description is:
+
+<p align="center">
+<img align="center" src="support\first_description.png" style="width: 700px" />
+</p>
+
+In this project we study the feasibility of an engine for classifying articles into different categories, with a sufficient level of precision.
 
 ---
 Data source:
 
-https://www.kaggle.com/olistbr/brazilian-ecommerce
+https://s3-eu-west-1.amazonaws.com/static.oc-static.com/prod/courses/files/Parcours_data_scientist/Projet+-+Textimage+DAS+V2/Dataset+projet+prétraitement+textes+images.zip
 
 | DATA  |   |
 |---|---|
-|  number of lines |   119 151 |
-|  number of columns |   30 |
+|  number of lines |   1050 |
+|  number of columns |   15 |
 
 ---
 
 There are 5 notebooks in this project. 
 
-**Notebook 1 :** Data Cleaning and Exploratory Data Analysis. 
-
-**Notebook 2, 3 :** K-NN algorithm is performed for two different sets of features.
-
-**Notebook 4 :** DBSCAN is tested.
-
-**Notebook 5 :** Hybride model. In this notebook we mix Hierarchical Clustering and K-NN. This allows us to choose the number of clusters, that is the number **K** in the KNN algorithm, by using the nice picture (which is a dendrogram) of hierarchies. Since the K-NN itself gives good results we did not need this method in order to reach a conclusion. However it can be very useful for more large datasets. 
-
----
-We have tested the following unsupervised Machine Learning algorithms here:
-  - KNN
-  - DBSCAN
-  - Hierarchical Clustering
+**Notebook 1 :** Text mining, Unsupervised models such as TF-IDF, Word embedding via GloVe, Neural networks, Natural Language Processing. We do not use the set of pictures in this Notebook. The steps of transformations on corpus look like this:
 
 <p align="center">
-<img align="center" src="support\first_photo.png" style="width: 300px" />
+<img align="center" src="support\text_processing.png" style="width: 500px" />
 </p>
+
+**Notebook 2 :** Computer Vision via OpenCV. We test the algorithms SIFT and ORB. The dimensionality reduction method that we use here is t-SNE. The results are weak. So we pass to other strategies in the following notebooks. We transform the images as the figures below show:
+
+<p align="center">
+  <img align="center" src="support\montre_0.png" style="width: 150px" />
+  <img align="center" src="support\montre_1.png" style="width: 150px" />
+  <img align="center" src="support\montre_2.png" style="width: 150px" />
+  <img align="center" src="support\montre_3.png" style="width: 150px" />
+</p>
+
+**Notebook 3, 4 :** Convolutional Neural Networks (CNN). We deep dive into deep learning. The first strategy concerns using CNN. Recall that the last layer called fully-connected classifies the input image of the network. After testing it, we delete this last layer and replace other classifiers. This strategy gives us opportunity to test algorithms like KNN and Random Forest.
+
+**Notebook 5 :** Transfer Learning. We use VGG-16 model to classify the images. We test data augmentation.
+
+**Notebook 6 :** Multi-model. Use of both textual and visual data to built a multi-model.
+
+---
+We have tested both supervised and unsupervised Machine Learning algorithms in this project. Transfer learning shows its power and gives the best results. 
+
+
+
 

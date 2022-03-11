@@ -45,6 +45,6 @@ We have tested the following unsupervised Machine Learning algorithms here:
   - Hierarchical Clustering
 
 <p align="center">
-<img align="center" src="support\profile.png" style="width: 600px" />
+<img align="center" src="support\first_photo.png" style="width: 300px" />
 </p>
 

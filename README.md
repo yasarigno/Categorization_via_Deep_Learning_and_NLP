@@ -50,11 +50,11 @@ There are 6 notebooks in this project.
   <img align="center" src="support\montre_3.png" style="width: 150px" />
 </p>
 
-**Notebook 3, 4 :** Convolutional Neural Networks (CNN). We deep dive into deep learning. The first strategy concerns using CNN. Recall that the last layer called fully-connected classifies the input image of the network. After testing it, we delete this last layer and replace other classifiers. This strategy gives us opportunity to test algorithms like KNN and Random Forest.
+**Notebook 3 :** Convolutional Neural Networks (CNN). We deep dive into deep learning. The first strategy concerns using CNN. Recall that the last layer called fully-connected classifies the input image of the network. After testing it, we delete this last layer and replace other classifiers. This strategy gives us opportunity to test algorithms like KNN and Random Forest.
 
-**Notebook 5 :** Transfer Learning. We use VGG-16 model to classify the images. We test data augmentation.
+**Notebook 4 :** Transfer Learning. We use VGG-16 model to classify the images. We test data augmentation.
 
-**Notebook 6 :** Multi-model. Use of both textual and visual data to built a multi-model.
+**Notebook 5 :** Multi-model. Use of both textual and visual data to built a multi-model.
 
 ---
 We have tested both supervised and unsupervised Machine Learning algorithms in this project. Transfer learning shows its power and gives the best results. 

@@ -1,6 +1,9 @@
 ---
 ### PROJET-6
 ### Recognition of categories of products from images and textual descriptions.
+
+[Click here](https://yasarigno.github.io/folder/P6_support.pdf) for the presentation file of the project. 
+
 ---
 
 We are given a dataset which consists of pictures of goods and their descriptions. The csv file contains some other information such as the price of the product, the name of the product and its brand. There is as well a variable "product_category_tree" which defines categories and 6 subcategories of the product. This variable is defined manually by the sellers. As the size of our dataset grows up drastically, the task of associating the product to the category will be a burden. Therefore we must automatize this task by using only the pictures and the descriptions. Now the problem that we want to solve is converted into a problem of Natural Language Processing (NLP) and that of Computer Vision (CV). 

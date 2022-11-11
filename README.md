@@ -1,5 +1,5 @@
 ---
-### PROJET-6
+
 ### Recognition of categories of products from images and textual descriptions.
 
 [Click here](https://yasarigno.github.io/folder/P6_support.pdf) for the presentation file of the project. 
